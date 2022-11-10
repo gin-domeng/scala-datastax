@@ -9,7 +9,7 @@
     <version>1.0</version>
 
     <properties>
-        <cassandra-java-driver.version>4.15.0</cassandra-java-driver.version>
+        <cassandra-java-driver.version>4.13.0</cassandra-java-driver.version>
         <cassandra-native-protocol.version>1.5.1</cassandra-native-protocol.version>
         <java.version>1.8</java.version>
     </properties>
@@ -39,15 +39,15 @@
             <version>${cassandra-java-driver.version}</version>
         </dependency>
 
-        <dependency>
+        <!--<dependency>
             <groupId>com.datastax.oss</groupId>
             <artifactId>native-protocol</artifactId>
             <version>${cassandra-native-protocol.version}</version>
-        </dependency>
+        </dependency>-->
     </dependencies>
 
     <build>
-        <sourceDirectory>src/main/scala/com/datastax/examples</sourceDirectory>
+        <sourceDirectory>src/main/scala</sourceDirectory>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -67,17 +67,7 @@
                     </annotationProcessorPaths>
                 </configuration>
             </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-jar-plugin</artifactId>
-                <configuration>
-                    <archive>
-                        <manifest>
-                            <mainClass>com.datastax.examples.ManagerApp</mainClass>
-                        </manifest>
-                    </archive>
-                </configuration>
-            </plugin>
+
         </plugins>
     </build>
 
