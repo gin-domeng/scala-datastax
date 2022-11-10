@@ -8,4 +8,5 @@
   for details about the object mapper.
 * Demonstrate how to model entities as Scala case classes, and DAOs and mappers as Scala traits.
 * Demonstrate how to integrate the annotation processor on maven build.
-* This project is taken from this repo [GitHub] (https://github.com/DataStax-Examples/object-mapper-jvm) . Thanks to the Author. 
+* This project is taken from this repo [GitHub] (https://github.com/DataStax-Examples/object-mapper-jvm) . Thanks to the Author.
+  
